@@ -6,7 +6,7 @@ This is data documentation for intercations between soybean-corn rotation and cl
 We can access crop yield data via [NASS website](https://quickstats.nass.usda.gov/)
 
 Here is an example for geting corn yields:  
-<img src="../../master/images/NASS.png">
+<img src="../../images/NASS.png">
 
 
 ## Datasets from Google Earth Engine (GEE)
@@ -14,6 +14,7 @@ Here is an example for geting corn yields:
 The PRISM daily (AN81d) and monthly (AN81m) datasets are gridded climate datasets for the conterminous United States, produced by the PRISM Climate Group at Oregon State Univeristy.
 
 __Spatial resolution__: 4638.3 meteres  
+
 __Bands__: Total precipitation, mean temperature, minimum temperature, maximum temperature, mean dew point temperature, minimum vapor pressure deficit, maximum vapor pressure deficit. 
 
 We can access these datasets via [GEE code editor](https://developers.google.com/earth-engine/datasets/catalog/OREGONSTATE_PRISM_AN81m#description):  
@@ -34,6 +35,7 @@ Map.addLayer(precipitation, precipitationVis, 'Precipitation');
 TerraClimate is a dataset of monthly climate and climatic water balance for global terrestril surfaces. 
 
 __Spatial resolution__: 4638.3 meters
+
 __Bands__(normally used): precipitation accumulation, minimum temperature, maximum temperature, vapor pressure, vapor pressure deficit
 
 [GEE code editor example](https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE#bands):

@@ -83,14 +83,15 @@
 <section id="county-level-data-from-united-states-department-of-agriculture-usda">
 <h2>County-level data from United States Department of Agriculture (USDA)<a class="headerlink" href="#county-level-data-from-united-states-department-of-agriculture-usda" title="Permalink to this headline"></a></h2>
 <p>We can access crop yield data via <a class="reference external" href="https://quickstats.nass.usda.gov/">NASS website</a></p>
-<p>Here is an example for geting corn yields:<br /><img src="../../master/images/NASS.png"></p>
+<p>Here is an example for geting corn yields:<br /><img src="../../images/NASS.png"></p>
 </section>
 <section id="datasets-from-google-earth-engine-gee">
 <h2>Datasets from Google Earth Engine (GEE)<a class="headerlink" href="#datasets-from-google-earth-engine-gee" title="Permalink to this headline"></a></h2>
 <section id="paramter-elevation-regressions-on-independent-slopes-model-prism">
 <h3>Paramter-elevation Regressions On Independent Slopes Model (PRISM)<a class="headerlink" href="#paramter-elevation-regressions-on-independent-slopes-model-prism" title="Permalink to this headline"></a></h3>
 <p>The PRISM daily (AN81d) and monthly (AN81m) datasets are gridded climate datasets for the conterminous United States, produced by the PRISM Climate Group at Oregon State Univeristy.</p>
-<p><strong>Spatial resolution</strong>: 4638.3 meteres<br /><strong>Bands</strong>: Total precipitation, mean temperature, minimum temperature, maximum temperature, mean dew point temperature, minimum vapor pressure deficit, maximum vapor pressure deficit.</p>
+<p><strong>Spatial resolution</strong>: 4638.3 meteres</p>
+<p><strong>Bands</strong>: Total precipitation, mean temperature, minimum temperature, maximum temperature, mean dew point temperature, minimum vapor pressure deficit, maximum vapor pressure deficit.</p>
 <p>We can access these datasets via <a class="reference external" href="https://developers.google.com/earth-engine/datasets/catalog/OREGONSTATE_PRISM_AN81m#description">GEE code editor</a>:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="nx">ee</span><span class="p">.</span><span class="nx">ImageCollection</span><span class="p">(</span><span class="s1">&#39;OREGONSTATE/PRISM/AN81m&#39;</span><span class="p">)</span>
                   <span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">ee</span><span class="p">.</span><span class="nx">Filter</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s1">&#39;2018-07-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2018-07-31&#39;</span><span class="p">));</span>
@@ -108,8 +109,8 @@
 <section id="terraclimate">
 <h3>TerraClimate<a class="headerlink" href="#terraclimate" title="Permalink to this headline"></a></h3>
 <p>TerraClimate is a dataset of monthly climate and climatic water balance for global terrestril surfaces.</p>
-<p><strong>Spatial resolution</strong>: 4638.3 meters
-<strong>Bands</strong>(normally used): precipitation accumulation, minimum temperature, maximum temperature, vapor pressure, vapor pressure deficit</p>
+<p><strong>Spatial resolution</strong>: 4638.3 meters</p>
+<p><strong>Bands</strong>(normally used): precipitation accumulation, minimum temperature, maximum temperature, vapor pressure, vapor pressure deficit</p>
 <p><a class="reference external" href="https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE#bands">GEE code editor example</a>:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="nx">ee</span><span class="p">.</span><span class="nx">ImageCollection</span><span class="p">(</span><span class="s1">&#39;IDAHO_EPSCOR/TERRACLIMATE&#39;</span><span class="p">)</span>
                   <span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">ee</span><span class="p">.</span><span class="nx">Filter</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s1">&#39;2017-07-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-08-01&#39;</span><span class="p">));</span>
