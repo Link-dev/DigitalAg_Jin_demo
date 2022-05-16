@@ -6,7 +6,7 @@ This is data documentation for intercations between soybean-corn rotation and cl
 We can access crop yield data via [NASS website](https://quickstats.nass.usda.gov/)
 
 Here is an example for geting corn yields:
-<img src='D:\DigitalAg_Jin\images\NASS.png'>
+<img src='https://github.com/Link-dev/DigitalAg_Jin_demo/tree/master/images\NASS.png'>
 
 
 ## Datasets from Google Earth Engine (GEE)
