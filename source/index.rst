@@ -5,7 +5,7 @@
 
 Welcome to DigitalAg_Jin's documentation!
 =========================================
-.. image:: images/Cover.png
+
 
 .. toctree::
    :maxdepth: 2
