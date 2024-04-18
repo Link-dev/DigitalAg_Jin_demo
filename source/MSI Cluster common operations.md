@@ -78,7 +78,3 @@ cd xxx/xxx/xxx
 source activate xxx_environment
 python xxx.py
 ```
-
-### using sbatch to submit a .bsh file
-sbatch test.bsh
-
