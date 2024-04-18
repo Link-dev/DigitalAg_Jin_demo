@@ -55,7 +55,7 @@ scontrol show job jobID # view more detailed info (usually this can be replaced 
 ### Apply for a interactive-job
 
 ```shell
-srun -n 2 -t 24:00:00 --mem=32gb --cpus-per-task=4 --pty bash #specify an 24-hour wall time limit, 32G memory and 2 processor cores (=4 hardware threads)
+srun -n 1 -t 24:00:00 --mem=32gb --cpus-per-task=4 --pty bash #specify an 24-hour wall time limit, 32G memory and 2 processor cores (=4 hardware threads)
 srun -n 1 -t 24:00:00 --mem=32gb --x11 --pty bash # x11 means display GUI by default.
 srun -n 1 -t 24:00:00 -p v100 --mem=32gb --gres=gpu:v100:1 --pty bash
 ```
@@ -78,4 +78,7 @@ cd xxx/xxx/xxx
 source activate xxx_environment
 python xxx.py
 ```
+
+### using sbatch to submit a .bsh file
+sbatch test.bsh
 
